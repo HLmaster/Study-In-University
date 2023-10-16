@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="./007/007微博网站首页.css">
+	</head>
+	<body>
+		<!--<div> 元素 （或 HTML 文档分区元素） 是一个通用型的流内容容器，在不使用CSS的情况下，其对内容或布局没有任何影响-->
+		<!--作为一个"纯粹的"容器， 元素在语义上不表示任何特定类型的内容。
+		然而，其可以将内容分组，从而可以使用class或是id属性方便的定义内容的格式，也可以在一段文档中划分标记出使用另一种语言书写的内容（使用lang 属性）等等-->
+		<div class="navbar">
+			<a href="" class="logo"></a>
+			<!--<form> 元素表示文档中的一个区域，此区域包含交互控件，用于向 Web 服务器提交信息-->
+			<!--action:处理表单提交的 URL。这个值可被 <button>、<input type=“submit”> 或 <input type=“image”> 元素上的 formaction 属性覆盖-->
+			<!--method:浏览器使用这种 HTTP 方式来提交 表单-->
+			<!--get：指的是 HTTP GET 方法;表单数据会附加在 属性的 URL 中，并以 '？' 作为分隔符，没有副作用时使用这个方法-->
+			<form action="" method="get">
+				<input type="text" />
+				<!--submit:用于提交表单的按钮-->
+				<input type="submit" value="搜索" />
+			</form>
+			<div class="nav">
+				<!--<span> 元素是短语内容的通用行内容器，并没有任何特殊语义
+				可以使用它来编组元素以达到某种样式意图（通过使用类或者 Id 属性），或者这些元素有着共同的属性，比如lang。应该在没有其他合适的语义元素时才使用它-->
+				<a class="nav_link" href="#">注册</a><span>|</span>
+				<a class="nav_link" href="#">登录</a>
+			</div>			
+		</div>
+		<div class="pageContainer">
+	
+			<ul class="page_left">
+				<li>热门</li>
+				<li>头条</li>
+				<li>视频</li>
+				<li>话题榜</li>
+				<li>热搜榜</li>
+				<li>要闻榜</li>
+			</ul>
+			<div class="page_right">
+				<a href="#" class="blog_module">
+					<p>层叠样式表（Cascading Style Sheets，缩写为 CSS）是一种样式表语言</p>
+					<img src="./007/zhuzhu.jpg">
+					<p class="subinfo_writer">一只小猪</p>
+					<p class="subinfo_time">2023.10.11</p>
+				</a>
+				<a href="#" class="blog_module">
+					<p>用来描述HTML或XML（包括SVG、MathML，XHTML等XML分支语言)文档呈现方式</p>
+					<img src="./007/makabaka.jpg">
+					<p class="subinfo_writer">玛卡巴卡</p>
+					<p class="subinfo_time">昨天 16.45</p>
+				</a>
+				<a href="#" class="blog_module">
+					<p>CSS描述了在屏幕、纸质、音频等其他媒体上的元素应该如何被渲染的问题</p>
+					<img src="./007/nver.jpg">
+					<p class="subinfo_writer">我脑婆</p>
+					<p class="subinfo_time">5小时前</p>
+				</a>
+			</div>
+			
+		</div>
+	</body>
+</html>

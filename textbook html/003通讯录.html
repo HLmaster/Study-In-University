@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>通讯录</title>
+	</head>
+	<body>
+		<header>
+			<h2>通讯录</h2>
+		</header>
+		<article>
+			<table border="1">
+				<tr>
+					<th>编号</th>
+					<th>姓名</th>
+					<th hidden>手机号</th>
+					<!--hidden 类型的input元素允许Web开发者包含用户不可见、不可改的数据，在用户提交表单时，这些数据会一并发送出-->
+					<th>邮箱</th>
+					<th>联系地址</th>
+				</tr>
+				<tr>
+					<td>1</td>
+					<td>张三</td>
+					<td hidden>18600000000</td>
+					<td contenteditable="">zhangsan@163.com</td>
+					<!--contenteditable是一个枚举属性，表示元素是否可被用户编辑。如果可以，浏览器会修改元素的组件以允许编辑-->
+					<td data-address="湖北省武汉市">中国</td>
+					<!--data-* 全局属性 是一类被称为自定义数据属性的属性，它赋予我们在所有 HTML 元素上嵌入自定义数据属性的能力，
+					并可以通过脚本在 HTML 与 DOM 表现之间进行专有数据的交换-->
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>李四</td>
+					<td hidden>18700000000</td>
+					<td contenteditable>lisi@163.com</td>
+					<td data-address="湖北省武汉市">中国</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>王五</td>
+					<td hidden>18800000000</td>
+					<td contenteditable>wangwu@163.com</td>
+					<td data-address="湖北省武汉市">中国</td>
+				</tr>
+			</table>
+		</article>
+	</body>
+</html>
